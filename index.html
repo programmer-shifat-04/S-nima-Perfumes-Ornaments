@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sénima | Perfumes & Ornaments</title>
+
+    <meta
+        name="description"
+        content="Discover premium perfumes and elegant ornaments at Sénima."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="#">SÉNIMA</a>
+            <span>PERFUMES & ORNAMENTS</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-btn" onclick="openSearch()">
+                🔍
+            </button>
+
+            <button class="cart-btn" onclick="openCart()">
+                🛒
+                <span id="cart-count">0</span>
+            </button>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div id="mobile-menu" class="mobile-menu">
+
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">
+                SÉNIMA COLLECTION
+            </p>
+
+            <h1>
+                Find Your
+                <span>Signature</span>
+                Scent.
+            </h1>
+
+            <p class="hero-text">
+                Discover carefully selected perfumes and elegant
+                ornaments designed to add something special to
+                every moment.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="btn primary-btn">
+                    SHOP NOW
+                </a>
+
+                <a href="#categories" class="btn secondary-btn">
+                    EXPLORE COLLECTION
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORY ================= -->
+
+    <section id="categories" class="section">
+
+        <div class="section-heading">
+
+            <p>EXPLORE</p>
+
+            <h2>
+                Shop By Category
+            </h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card">
+
+                <img
+                    src="Perfumes.png"
+                    alt="Perfumes"
+                >
+
+                <div class="category-overlay">
+
+                    <h3>Perfumes</h3>
+
+                    <a href="#shop">
+                        Explore →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <img
+                    src="Bangles.png"
+                    alt="Bangles"
+                >
+
+                <div class="category-overlay">
+
+                    <h3>Bangles</h3>
+
+                    <a href="#shop">
+                        Explore →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="category-card">
+
+                <img
+                    src="EarRings.png"
+                    alt="Earrings"
+                >
+
+                <div class="category-overlay">
+
+                    <h3>Earrings</h3>
+
+                    <a href="#shop">
+                        Explore →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="shop" class="section products-section">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>
+                Featured Products
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        BEST SELLER
+                    </span>
+
+                    <img
+                        src="Bleu de Chanel-15ml.png"
+                        alt="Bleu de Chanel"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Bleu de Chanel', 350)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Bleu de Chanel - 15 ml
+                    </h3>
+
+                    <div class="price">
+                        ৳350
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        BEST SELLER
+                    </span>
+
+                    <img
+                        src="Bleu De Chanel.jpg"
+                        alt="Bleu de Chanel"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Bleu de Chanel', 600)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Bleu de Chanel - 30ml
+                    </h3>
+
+                    <div class="price">
+                        ৳600
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        BEST SELLER
+                    </span>
+
+                    <img
+                        src="Bleu de Chanel_100ml.png"
+                        alt="Bleu de Chanel"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Bleu de Chanel', 1400)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Bleu de Chanel - 100ml
+                    </h3>
+
+                    <div class="price">
+                        ৳1,400
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Dior Sauvage.png"
+                        alt="Dior Sauvage"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Dior Sauvage', 450)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Dior Sauvage - 15 ml
+                    </h3>
+
+                    <div class="price">
+                        ৳450
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Dior Sauvage.png"
+                        alt="Dior Sauvage"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Dior Sauvage', 650)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Dior Sauvage - 30ml
+                    </h3>
+
+                    <div class="price">
+                        ৳650
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <a href="productdetails.html" class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Dior Sauvage.png"
+                        alt="Dior Sauvage"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Dior Sauvage', 1500)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Dior Sauvage - 30ml
+                    </h3>
+
+                    <div class="price">
+                        ৳1,500
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- PRODUCT 7 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        BEST EVER
+                    </span>
+
+                    <img
+                        src="Good Girl_6ml.jpg"
+                        alt="Good Girl"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Good Girl', 220)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                       WOMEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Good Girl - 6 ml
+                    </h3>
+
+                    <div class="price">
+                        ৳220
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 8 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Cloude_6ml.jpg"
+                        alt="ARIANA GRANDE CLOUDE"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('ARIANA GRANDE CLOUDE', 200)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                       WOMEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        ARIANA GRANDE CLOUDE - 6 ml
+                    </h3>
+
+                    <div class="price">
+                        ৳200
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 9 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Vampire blood_6ml.jpg"
+                        alt="VAMPIRE BLOOD"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('VAMPIRE BLOOD', 250)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                       UNISEX PERFUME
+                    </p>
+
+                    <h3>
+                        VAMPIRE BLOOD - 6 ml
+                    </h3>
+
+                    <div class="price">
+                        ৳250
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 10 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        LIMITED
+                    </span>
+
+                    <img
+                        src="images/bangle1.jpg"
+                        alt="Elegant Bangles"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Elegant Bangles', 850)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        ORNAMENTS
+                    </p>
+
+                    <h3>
+                        Elegant Bangles
+                    </h3>
+
+                    <div class="price">
+                        ৳850
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 11 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img
+                        src="images/earrings1.jpg"
+                        alt="Classic Earrings"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Classic Earrings', 650)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        ORNAMENTS
+                    </p>
+
+                    <h3>
+                        Classic Earrings
+                    </h3>
+
+                    <div class="price">
+                        ৳650
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="view-all">
+
+            <a href="#" class="btn secondary-btn">
+                VIEW ALL PRODUCTS
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO ================= -->
+
+    <section class="promo">
+
+        <div class="promo-content">
+
+            <p>
+                SÉNIMA SPECIAL COLLECTION
+            </p>
+
+            <h2>
+                Something Beautiful
+                <br>
+                For Every Occasion.
+            </h2>
+
+            <a href="#shop" class="btn primary-btn">
+                SHOP COLLECTION
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY SENIMA ================= -->
+
+    <section id="about" class="section">
+
+        <div class="section-heading">
+
+            <p>WHY SÉNIMA</p>
+
+            <h2>
+                Shopping Made Simple
+            </h2>
+
+        </div>
+
+
+        <div class="features">
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Quality Products
+                </h3>
+
+                <p>
+                    Carefully selected perfumes and ornaments
+                    for our customers.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ♡
+                </div>
+
+                <h3>
+                    Elegant Collection
+                </h3>
+
+                <p>
+                    Discover products selected with style
+                    and elegance in mind.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Reliable Delivery
+                </h3>
+
+                <p>
+                    We aim to make your shopping experience
+                    simple and convenient.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🔒
+                </div>
+
+                <h3>
+                    Secure Ordering
+                </h3>
+
+                <p>
+                    Your order information is handled with care.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div>
+
+            <p>
+                STAY CONNECTED
+            </p>
+
+            <h2>
+                Discover What's New
+            </h2>
+
+            <p>
+                Follow Sénima for new collections,
+                offers and updates.
+            </p>
+
+        </div>
+
+        <a
+            href="#"
+            class="btn primary-btn"
+        >
+            FOLLOW US
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    SÉNIMA
+                </h2>
+
+                <p>
+                    Perfumes & Ornaments
+                </p>
+
+                <p>
+                    Discover your signature style
+                    with Sénima.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="#shop">
+                    Perfumes
+                </a>
+
+                <a href="#shop">
+                    Ornaments
+                </a>
+
+                <a href="#shop">
+                    New Arrivals
+                </a>
+
+                <a href="#shop">
+                    Best Sellers
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    INFORMATION
+                </h4>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Delivery Information
+                </a>
+
+                <a href="#">
+                    Return Policy
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    CONTACT
+                </h4>
+
+                <p>
+                    📞 +880 1316980153
+                </p>
+
+      <p>
+        f Sénima Perfumes & Ornaments
+
+      </p>
+
+                <p>
+                    📍 Dhaka, Bangladesh
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Sénima Perfumes & Ornaments.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= SEARCH MODAL ================= -->
+
+    <div id="search-modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeSearch()"
+            >
+                ×
+            </button>
+
+            <h2>
+                Search Products
+            </h2>
+
+            <input
+                type="text"
+                placeholder="Search perfumes, bangles..."
+                id="search-input"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div id="cart-modal" class="modal">
+
+        <div class="modal-content cart-content">
+
+            <button
+                class="close-btn"
+                onclick="closeCart()"
+            >
+                ×
+            </button>
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <div id="cart-items">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+            <div class="cart-total">
+
+                Total:
+                <strong id="cart-total">
+                    ৳0
+                </strong>
+
+            </div>
+
+            <button
+                class="btn primary-btn checkout-btn"
+                onclick="checkout()"
+            >
+                CHECKOUT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

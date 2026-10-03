@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sénima | Perfumes & Ornaments</title>
+
+    <meta
+        name="description"
+        content="Discover premium perfumes and elegant ornaments at Sénima."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body>
+    <!-- PRODUCT 6 -->
+
+            <a href="productdetails.html" class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge new">
+                        NEW
+                    </span>
+
+                    <img
+                        src="Dior Sauvage.png"
+                        alt="Dior Sauvage"
+                    >
+
+                    <button
+                        class="quick-add"
+                        onclick="addToCart('Dior Sauvage', 1500)"
+                    >
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S PERFUME
+                    </p>
+
+                    <h3>
+                        Dior Sauvage - 30ml
+                    </h3>
+
+                    <input type="radio" name="quantity" value="3"> 3ml 
+                    <input type="radio" name="quantity" value="6"> 6ml 
+                    <input type="radio" name="quantity" value="15"> 15ml 
+                    <input type="radio" name="quantity" value="30"> 30ml 
+                    <input type="radio" name="quantity" value="100"> 100ml 
+
+                    <div class="price" id="price">
+                    </div>
+
+                </div>
+
+            </a>
+
+            <script>
+                const priceElement = document.getElementById("price");
+
+                const prices = {
+                    3: 150,
+                    6: 250,
+                    15: 450,
+                    30: 650,
+                    100: 1500
+                };
+
+                document.querySelectorAll('input[name="quantity"]').forEach(input => {
+                    input.addEventListener("change", function () {
+                        const price = prices[this.value];
+                        priceElement.textContent = `৳${price.toLocaleString()}`;
+                    });
+                });
+            </script>
+
+</body>
+</html>
